@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create Object in JS</h1>
+    <p>There are 3 type to create object in JS</p>
+    <p>1. using Single Literal<br>2. Using new Keyword<br>3. Using constructor function</p>
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+    <p id="four"></p>
+ <script>
+        //using Single Literal
+        let person={
+            name:"swati",
+            lastName:"Vishwakarma",
+            rollNo:112288
+        }
+        document.getElementById("first").innerHTML="NAME: "+person.name+" "+person.lastName+" "+person.rollNo;
+        //Using new Keyword
+        let address=new Object();
+        address.number=695;
+        address.street="betma";
+        address.city="Indore";
+        document.getElementById("second").innerHTML="Address: "+address.number+" "+address.street+" "+address.city;
+
+        //Using  constructor function
+        function employee(name,address,age)
+        {
+            this.empname=name;
+            this.empaddress=address;
+            this.empage=age;
+        }
+        var emp1=new employee("rohit","Indore",25);
+        var emp2=new employee("mohit","mumbai",30);
+        document.getElementById("third").innerHTML="Employee1: "+emp1.empname+" "+emp1.empaddress+" "+emp1.empage;
+        document.getElementById("four").innerHTML="Employee2: "+emp2.empname+" "+emp2.empaddress+" "+emp2.empage;
+        
+    </script>
+</body>
+</html>

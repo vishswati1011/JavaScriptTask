@@ -1,0 +1,25 @@
+<!--"Write a JavaScript program to display the current day and time in the following format. Sample Output : Today is : Tuesday.
+Current time is : 10 PM : 30 : 38
+"
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="myh1"></h2>
+    <h2 id="myh2"></h2>
+    <script>
+        var d=new Date();
+        var arr=['Sunday','Monday','Tuesday','Wednesday',"Thusday","Friday","Saterday"]
+        var day=d.toLocaleDateString();
+        var time=d.toLocaleTimeString();
+        document.getElementById("myh1").innerHTML="Today is:"+arr[d.getDay()];  
+        document.getElementById("myh2").innerHTML=" Current Time is:"+d.getHours()+" PM: "+d.getMinutes()+" : "+d.getSeconds() ;
+    </script>        
+</body>
+</html>

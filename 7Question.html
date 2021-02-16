@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is call</h1>
+    <p>The call() method is a predefined JavaScript method.
+        It can be used to invoke (call) a method with an owner object as an argument (parameter).
+    </p>
+    <h1>What is apply</h1>
+    <p>With the apply() method, you can write a method that can be used on different objects.</p>
+    <h1> difference between Call & Apply with example? </h1>
+    <p>difference between call and apply is the way of argument passing</p>
+    <h2>Call</h2>
+    <p>In call we can pass seperate argument </p>
+    <h2>Apply</h2>
+    <p>In Apply we can pass argument as array list</p>
+    <script>
+        var person = {
+            fullName: function () {
+                console.log(this.firstName + " " + this.lastName);
+            }
+        }
+        var person1 = {
+            firstName: "John",
+            lastName: "Doe"
+        }
+        person.fullName.call(person1);
+        person.fullName.apply(person1);
+        //diffrence between call and apply
+        var person = {
+            fullName: function (city, country) {
+                console.log(this.firstName + " " + this.lastName + "," + city + "," + country);
+            }
+        }
+        var person1 = {
+            firstName: "Nikolush",
+            lastName: "Dash"
+        }
+        var person2 = {
+            firstName: "swati",
+            lastName: "Vishwakarma"
+        }
+        person.fullName.call(person1, "Oslo", "Norway");
+        person.fullName.apply(person2, ["Marony", "North"]);
+    </script>
+</body>
+
+</html>

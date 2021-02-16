@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Create an Array In JS</h1>
+    <div>Array elemnt are<p id="myp"> </p>
+        First element<p id="first"></p>
+    </div>
+    <p>Modified array is</p>
+    <p id="modarr"></p>
+    <script>
+        let color = ['red', 'blue', 'black'];
+        document.getElementById("myp").innerHTML = color;
+        //access array element using index
+        document.getElementById('first').innerHTML = color[0];
+        //add new element in existing array
+        color[color.length] = 'yellow';
+        document.getElementById("modarr").innerHTML = color;
+
+    </script>
+</body>
+
+</html>

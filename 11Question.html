@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //"What will be the output of the following code?
+        /*
+        "What will be the output of the following code?
+        var Employee =
+        {
+        company: 'xyz'
+        }
+        var Emp1 = Object.create(employee);
+        delete Emp1.company Console.log(emp1.company);
+
+            Output=employee not defined //at line 5
+            there are so many error becouse JavaScript is case sensitive 
+
+*/
+        var Employee =
+        {
+        company: 'xyz'
+        }
+        var emp1 = Object.create(Employee);
+        delete emp1.company 
+        console.log(emp1.company);
+
+        /* after remove all error 
+        output will be=xyz
+        
+        */
+
+    </script>
+</body>
+</html>

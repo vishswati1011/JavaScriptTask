@@ -1,0 +1,35 @@
+<!--
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Enter three side if triangle</h1>
+    side1:<input type="number" id="s1">
+    side2:<input type="number" id="s2">
+    side3:<input type="number" id="s3">
+    Area is:<p id="ans"></p>
+    <button onclick="findareaOfTriangle()">Find</button>
+
+    <script>
+        function findareaOfTriangle() {
+
+            var s1 = Number(document.getElementById("s1").value);
+            var s3 = Number(document.getElementById("s2").value);
+            var s2 = Number(document.getElementById("s3").value);
+            var s = (s1 + s2 + s3) / 2;
+            var area = Math.sqrt(s * ((s - s1) * (s - s2) * (s - s3)));
+            document.getElementById("ans").innerHTML = area;
+        }
+    </script>
+</body>
+
+</html>

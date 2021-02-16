@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //create a cookie
+        document.cookie = "username=John Doe; expires=Thu, 18 Dec 2021 12:00:00 UTC";
+        let cookies = document.cookie;
+        document.write(cookies + "<br>");
+        //update a cookie
+        document.cookie = "username=nikolus jurry; expires=Wed, 20 Dec 2021 12:00:00 UTC";
+        cookies = document.cookie;
+        document.write(cookies);
+        //delete a cookie
+        document.cookie = "username=; expires=Thu, 20 Dec 2016 00:00:00 UTC";
+    </script>
+</body>
+
+</html>

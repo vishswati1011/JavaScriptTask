@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //"What will be the output of the following code?
+    var X = { Foo : 1}; 
+    var Output = (function() 
+    { 
+    delete X.foo; 
+    return X.foo; 
+    } 
+    )(); 
+    console.log(output);
+    //output= if we right console.log(Output); then undefined
+    //otherrwise if we right console.log(output); then output not defined 
+    </script>
+</body>
+</html>
